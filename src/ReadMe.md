@@ -1,3 +1,3 @@
 Description du projet
 
-Une ligne de plus
+Une ligne de plus et
