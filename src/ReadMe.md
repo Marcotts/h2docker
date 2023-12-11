@@ -1,3 +1,4 @@
 Description du projet
 
-Une ligne de plus et
+En particulier dans ce projet: Regarder dans le haut du projet vous y retrouverez un répertoire .github
+
