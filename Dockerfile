@@ -16,7 +16,7 @@ ADD install/h2-start.sh /tmp/
 
 #RUN addgroup -g 1001 -S appuser && adduser -u 1001 -S appuser -G appuser
 RUN mkdir -p ${H2CONF} ${H2DATA}/data
-RUN cp /tmp/test*.* ${H2DATA}/data
+RUN cp /tmp/bmdb*.* ${H2DATA}/data
 RUN addgroup -g 1001 -S h2 && adduser -u 1001 -S h2 -G h2
 RUN mkdir /logs && chown -R h2:h2  /logs
 RUN unzip -q /tmp/h2.zip -d /opt/
