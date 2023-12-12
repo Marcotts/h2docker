@@ -1,0 +1,10 @@
+services:
+  data:
+    image: ccdsergio/h2dockerapp
+    ports:
+      - 9024:9024
+      - 8084:8084
+    volumes:
+      - h2dockerrepo:/opt/h2-data/data
+volumes:
+  h2dockerrepo:

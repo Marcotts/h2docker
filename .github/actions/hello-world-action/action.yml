@@ -1,3 +1,5 @@
+name: GitHub Actions Demo Action Script.yml
+description: Action Description1
 jobs:
   build:
     runs-on: ubuntu-latest

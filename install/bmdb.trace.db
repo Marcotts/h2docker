@@ -1,0 +1,123 @@
+2023-12-11 23:52:35.276000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]User\000d\000a(\000d\000a    id int auto_increment primary key,\000d\000a    NAME VARCHAR2(15),\000d\000a    SURNAME VARCHAR2(15),\000d\000a    EMAIL VARCHAR2(15),\000d\000a    USERNAME VARCHAR2(15),\000d\000a    PASSWORD VARCHAR2(15)\000d\000a)"; expected "identifier"; SQL statement:
+create table User
+(
+    id int auto_increment primary key,
+    NAME VARCHAR2(15),
+    SURNAME VARCHAR2(15),
+    EMAIL VARCHAR2(15),
+    USERNAME VARCHAR2(15),
+    PASSWORD VARCHAR2(15)
+) [42001-224]
+2023-12-11 23:52:35.311000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO [*]User (NAME, SURNAME, EMAIL, USERNAME, PASSWORD) VALUES('NAME3', 'SURNAME3', 'EMAIL3', 'USERNAME3', 'PASSWORD3')"; expected "identifier"; SQL statement:
+INSERT INTO User (NAME, SURNAME, EMAIL, USERNAME, PASSWORD) VALUES('NAME3', 'SURNAME3', 'EMAIL3', 'USERNAME3', 'PASSWORD3') [42001-224]
+2023-12-11 23:52:45.033000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "SEQ_BATCH_PER_DAY" already exists; SQL statement:
+CREATE SEQUENCE SEQ_BATCH_PER_DAY
+    MINVALUE 4000
+    MAXVALUE 7000
+    INCREMENT BY 1
+    START WITH 4000
+    CYCLE [90035-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:53)
+	at org.h2.command.ddl.SchemaOwnerCommand.update(SchemaOwnerCommand.java:33)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1345)
+	at org.h2.server.web.WebApp.query(WebApp.java:1143)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1109)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1096)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.lang.Thread.run(Thread.java:748)
+2023-12-11 23:52:45.047000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO [*]User (NAME, SURNAME, EMAIL, USERNAME, PASSWORD) VALUES('NAME3', 'SURNAME3', 'EMAIL3', 'USERNAME3', 'PASSWORD3')"; expected "identifier"; SQL statement:
+INSERT INTO User (NAME, SURNAME, EMAIL, USERNAME, PASSWORD) VALUES('NAME3', 'SURNAME3', 'EMAIL3', 'USERNAME3', 'PASSWORD3') [42001-224]
+2023-12-11 23:52:45.078000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" already exists; SQL statement:
+create table test(id bigint auto_increment, name varchar(255)) [42101-224]
+2023-12-11 23:53:21.938000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER22" already exists; SQL statement:
+create table User22
+(
+    id int auto_increment primary key,
+    NAME VARCHAR2(15),
+    SURNAME VARCHAR2(15),
+    EMAIL VARCHAR2(15),
+    USERNAME VARCHAR2(15),
+    PASSWORD VARCHAR2(15)
+) [42101-224]
+2023-12-11 23:53:21.940000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "SEQ_BATCH_PER_DAY" already exists; SQL statement:
+CREATE SEQUENCE SEQ_BATCH_PER_DAY
+    MINVALUE 4000
+    MAXVALUE 7000
+    INCREMENT BY 1
+    START WITH 4000
+    CYCLE [90035-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:53)
+	at org.h2.command.ddl.SchemaOwnerCommand.update(SchemaOwnerCommand.java:33)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1345)
+	at org.h2.server.web.WebApp.query(WebApp.java:1143)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1109)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1096)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.lang.Thread.run(Thread.java:748)
+2023-12-11 23:53:21.943000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" already exists; SQL statement:
+create table test(id bigint auto_increment, name varchar(255)) [42101-224]
+2023-12-11 23:53:32.211000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER22" already exists; SQL statement:
+create table User22
+(
+    id int auto_increment primary key,
+    NAME VARCHAR2(15),
+    SURNAME VARCHAR2(15),
+    EMAIL VARCHAR2(15),
+    USERNAME VARCHAR2(15),
+    PASSWORD VARCHAR2(15)
+) [42101-224]
+2023-12-11 23:53:32.213000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "SEQ_BATCH_PER_DAY" already exists; SQL statement:
+CREATE SEQUENCE SEQ_BATCH_PER_DAY
+    MINVALUE 4000
+    MAXVALUE 7000
+    INCREMENT BY 1
+    START WITH 4000
+    CYCLE [90035-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:53)
+	at org.h2.command.ddl.SchemaOwnerCommand.update(SchemaOwnerCommand.java:33)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1345)
+	at org.h2.server.web.WebApp.query(WebApp.java:1143)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1109)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1096)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.lang.Thread.run(Thread.java:748)
+2023-12-11 23:53:32.216000Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" already exists; SQL statement:
+create table test(id bigint auto_increment, name varchar(255)) [42101-224]

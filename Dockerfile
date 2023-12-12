@@ -3,7 +3,7 @@ FROM openjdk:8-jdk-alpine
 USER root
 
 ARG ZIP_FILE=install/*.zip
-ARG DATABASE=install/test*.*
+ARG DATABASE=install/bmdb*.*
 COPY ${ZIP_FILE} /tmp/h2.zip
 COPY ${DATABASE} /tmp/
 
