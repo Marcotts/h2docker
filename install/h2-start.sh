@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 cd /opt
 env | grep H2
