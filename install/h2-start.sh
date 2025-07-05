@@ -11,7 +11,9 @@ fi
 ls -la
 pwd
 env
-
+echo --------------------------------------
+echo $H2DRIVERS:$CLASSPATH
+echo --------------------------------------
 ${H2DIR}/bin/h2.sh \
 	-properties "${H2CONF}" \
 	-baseDir "${H2DATA}/data" \
